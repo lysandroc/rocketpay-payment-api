@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "b83cffc4-e73a-4f3e-a118-9e3a6194763b",
+		"name": "Rocketpay-postman-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"testeasdaasdfasdsd2ss\",\n    \"nickname\": \"qlasdaasdfsdqasdr2coisa\",\n    \"email\": \"teste3aasdfasdasdasd42@test\",\n    \"age\": 27,\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"value\": 50.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/accounts/40d61103-5a2c-4647-b270-ea3c12de4f61/deposit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"accounts",
+						"40d61103-5a2c-4647-b270-ea3c12de4f61",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdraw",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"value\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/accounts/40d61103-5a2c-4647-b270-ea3c12de4f61/withdraw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"accounts",
+						"40d61103-5a2c-4647-b270-ea3c12de4f61",
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\": \"40d61103-5a2c-4647-b270-ea3c12de4f61\",\n    \"to\": \"9f81d916-748f-43a5-9910-4dfeaf9bdbda\",\n    \"value\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/accounts/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"accounts",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
