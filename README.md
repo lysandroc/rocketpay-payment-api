@@ -4,7 +4,7 @@
 <p align="center">
   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#author">Author</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#gettingStarted">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
 </p>
 
@@ -43,9 +43,10 @@ This project uses to work:
 
 <br>
 
-<h2 id="setting-up">
-  Setting up the environment
+<h2 id="gettingStarted">
+  Development workflow
 </h2>
+<br>
 
 ```bash
 docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
@@ -58,7 +59,6 @@ docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgre
 - Database creation and migration `mix ecto.drop` -> `mix ecto.create` -> `mix ecto.migrate`
 
 <br>
-
 <h2 id="license">
   📝 License
 </h2>
